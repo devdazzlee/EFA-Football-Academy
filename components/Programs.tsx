@@ -2,7 +2,7 @@ export default function Programs() {
   const programs = [
     {
       name: 'Youth Development',
-      ageGroup: 'Ages 16–18',
+      ageGroup: 'All Ages',
       description: 'Structured age-group training focused on technical mastery, tactical awareness, and physical readiness for competitive football.',
       features: [
         'Advanced ball mastery',
@@ -14,7 +14,7 @@ export default function Programs() {
     },
     {
       name: 'Elite Performance Program',
-      ageGroup: 'Ages 18–22',
+      ageGroup: 'All Ages',
       description: 'Advanced training for young adults targeting professional club opportunities, national trials, and high-performance football.',
       features: [
         'Elite-level technical precision',

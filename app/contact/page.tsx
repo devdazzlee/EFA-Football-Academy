@@ -87,7 +87,7 @@ export default function ContactPage() {
               {
                 emoji: '📞',
                 title: 'Phone',
-                details: ['+92 (21) 1234-5678', 'Mon-Fri: 9AM-6PM', 'Available for inquiries'],
+                details: ['+92 325 0498494', 'Mon-Fri: 9AM-6PM', 'Available for inquiries'],
               },
               {
                 emoji: '📧',
@@ -184,7 +184,7 @@ export default function ContactPage() {
                     value={formData.phone}
                     onChange={handleChange}
                     className="w-full px-4 py-3 rounded-lg bg-card border border-border text-white placeholder-muted-foreground focus:border-primary focus:outline-none transition-colors duration-300 font-poppins"
-                    placeholder="+92 (21) 1234-5678"
+                    placeholder="+92 325 0498494"
                   />
                 </motion.div>
 
@@ -294,7 +294,7 @@ export default function ContactPage() {
                   Our admissions team is ready to answer your questions about programs, enrollment, and career opportunities.
                 </p>
                 <motion.a
-                  href="tel:+92212345678"
+                  href="tel:+923250498494"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   className="inline-block px-6 py-2 bg-accent text-accent-foreground rounded-lg font-semibold transition-all duration-300 font-poppins"

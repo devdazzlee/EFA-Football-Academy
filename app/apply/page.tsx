@@ -173,7 +173,7 @@ export default function ApplyPage() {
                           onChange={handleChange}
                           required
                           className="w-full px-4 py-3 rounded-lg bg-background border border-border text-white placeholder-muted-foreground focus:border-primary focus:outline-none transition-colors duration-300 font-poppins"
-                          placeholder="+92 (21) 1234-5678"
+                          placeholder="+92 325 0498494"
                         />
                       </motion.div>
 
@@ -338,7 +338,7 @@ export default function ApplyPage() {
                           onChange={handleChange}
                           required
                           className="w-full px-4 py-3 rounded-lg bg-background border border-border text-white placeholder-muted-foreground focus:border-primary focus:outline-none transition-colors duration-300 font-poppins"
-                          placeholder="+92 (21) 1234-5678"
+                          placeholder="+92 325 0498494"
                         />
                       </motion.div>
 

@@ -8,6 +8,7 @@ import ImageCarousel from '@/components/ImageCarousel'
 import TestimonialCarousel from '@/components/TestimonialCarousel'
 import StatsCounter from '@/components/StatsCounter'
 import Footer from '@/components/Footer'
+import Gallery from '@/components/Gallery'
 import Image from 'next/image'
 
 const containerVariants = {
@@ -86,7 +87,7 @@ export default function Home() {
                 🎯 Welcome to Elite Football Academy
               </h2>
               <p className="text-lg text-muted-foreground mb-6 font-poppins leading-relaxed">
-                Elite Football Academy is Pakistan's premier football development center dedicated to nurturing young talents aged 16-22. With over 7 years of excellence, we have transformed hundreds of passionate players into professional athletes competing at national and international levels.
+                Elite Football Academy is Pakistan's premier football development center dedicated to nurturing passionate players of all ages. With over 7 years of excellence, we have transformed hundreds of passionate players into professional athletes competing at national and international levels.
               </p>
               <p className="text-lg text-muted-foreground mb-6 font-poppins leading-relaxed">
                 Our commitment to excellence, combined with world-class facilities and expert coaching, ensures that every player receives the best possible training and mentorship to achieve their football dreams.
@@ -173,10 +174,10 @@ export default function Home() {
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
           >
             {[
-              { emoji: '🥅', name: 'Goalkeeper Program', age: '16-22 years', features: '• Reflexes & Positioning\n• Shot Stopping\n• Distribution' },
-              { emoji: '🛡️', name: 'Defender Training', age: '16-22 years', features: '• Defensive Tactics\n• Ball Control\n• Positioning' },
-              { emoji: '⚙️', name: 'Midfielder Course', age: '16-22 years', features: '• Game Vision\n• Passing Accuracy\n• Ball Control' },
-              { emoji: '⚡', name: 'Forward Academy', age: '16-22 years', features: '• Shooting Techniques\n• Positioning\n• Game Awareness' },
+              { emoji: '🥅', name: 'Goalkeeper Program', features: '• Reflexes & Positioning\n• Shot Stopping\n• Distribution' },
+              { emoji: '🛡️', name: 'Defender Training', features: '• Defensive Tactics\n• Ball Control\n• Positioning' },
+              { emoji: '⚙️', name: 'Midfielder Course', features: '• Game Vision\n• Passing Accuracy\n• Ball Control' },
+              { emoji: '⚡', name: 'Forward Academy', features: '• Shooting Techniques\n• Positioning\n• Game Awareness' },
             ].map((prog, i) => (
               <AnimatedCard key={i} index={i}>
                 <motion.div
@@ -187,7 +188,6 @@ export default function Home() {
                     {prog.emoji}
                   </div>
                   <h3 className="text-lg font-bold text-white mb-2 font-poppins">{prog.name}</h3>
-                  <p className="text-sm text-primary mb-4 font-poppins">{prog.age}</p>
                   <p className="text-sm text-muted-foreground font-poppins whitespace-pre-line">{prog.features}</p>
                 </motion.div>
               </AnimatedCard>
@@ -511,6 +511,8 @@ export default function Home() {
         </div>
       </section>
 
+      <Gallery />
+
       {/* Career Pathways */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-secondary/10">
         <div className="max-w-7xl mx-auto">
@@ -637,7 +639,7 @@ export default function Home() {
               <h3 className="text-2xl font-bold text-white mb-6 font-poppins">✅ Admission Requirements</h3>
               <ul className="space-y-4 font-poppins">
                 {[
-                  '• Age 16-22 years',
+                  '• Open to all age groups',
                   '• Basic football skills required',
                   '• Physical fitness assessment',
                   '• Medical clearance certificate',

@@ -28,7 +28,7 @@ export default function CTA() {
             </div>
 
             <p className="mt-8 text-sm text-muted-foreground">
-              📞 Call: +92-123-456-7890 | 📧 Email: apply@efacademy.pk
+              📞 Call: +92 325 0498494 | 📧 Email: apply@efacademy.pk
             </p>
           </div>
         </div>
@@ -39,12 +39,12 @@ export default function CTA() {
             {
               icon: '⭐',
               title: 'Elite Performance',
-              desc: 'For serious players aged 18-22',
+              desc: 'For serious players of all ages',
             },
             {
               icon: '🎯',
               title: 'Youth Development',
-              desc: 'Ages 16-18 starting their journey',
+              desc: 'For all players starting their journey',
             },
             {
               icon: '🥅',

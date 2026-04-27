@@ -53,7 +53,7 @@ export default function AboutPage() {
             >
               <h2 className="text-4xl font-bold text-white mb-6 font-poppins">🎯 Our Mission</h2>
               <p className="text-lg text-muted-foreground mb-4 leading-relaxed font-poppins">
-                To develop world-class footballers aged 16-22 through expert coaching, modern facilities, and comprehensive training programs. We empower young athletes to achieve their professional football dreams while maintaining high standards of discipline and character.
+                To develop world-class footballers of all ages through expert coaching, modern facilities, and comprehensive training programs. We empower athletes to achieve their professional football dreams while maintaining high standards of discipline and character.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed font-poppins">
                 Every player who joins Elite Football Academy receives personalized attention and strategic guidance to excel at the highest levels of the game.
@@ -267,56 +267,47 @@ export default function AboutPage() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: '-100px' }}
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
           >
             {[
               {
-                name: 'Coach Hassan Ahmed',
-                role: 'Director & Head Coach',
-                exp: '25+ years professional experience',
-                specialty: 'Strategic Planning',
+                name: 'Muhammad Kamil',
+                role: 'Club Secretary',
+                image: '/Team/Member1.jpg',
               },
               {
-                name: 'Coach Fatima Khan',
-                role: 'Technical Director',
-                exp: '20+ years international coaching',
-                specialty: 'Tactical Intelligence',
+                name: 'Komal',
+                role: 'Club Treasurer',
+                image: '/Team/Member2.jpg',
               },
               {
-                name: 'Coach Muhammad Ali',
-                role: 'Head of Fitness',
-                exp: '18+ years sports science',
-                specialty: 'Conditioning',
+                name: 'Meesam Ali',
+                role: 'Head Coach',
+                image: '/Team/Member4.jpg',
               },
               {
-                name: 'Coach Sofia Malik',
-                role: 'Mental Performance Coach',
-                exp: '15+ years psychology',
-                specialty: 'Mental Strength',
+                name: 'Anas',
+                role: 'Vice President',
+                image: '/Team/Member3.jpg',
               },
-              {
-                name: 'Coach Ahmed Khan',
-                role: 'Goalkeeper Coach',
-                exp: '22+ years goalkeeper specialist',
-                specialty: 'Goalkeeper Training',
-              },
-              {
-                name: 'Coach Zainab Hassan',
-                role: 'Medical & Recovery Officer',
-                exp: '20+ years sports medicine',
-                specialty: 'Injury Prevention',
-              },
-            ].map((coach, i) => (
+            ].map((member, i) => (
               <AnimatedCard key={i} index={i}>
                 <motion.div
                   whileHover={{ y: -10 }}
-                  className="p-8 rounded-xl bg-card border border-border hover:border-primary transition-all duration-300 h-full"
+                  className="p-0 rounded-xl bg-card border border-border hover:border-primary transition-all duration-300 h-full overflow-hidden group"
                 >
-                  <div className="text-5xl mb-4">👨‍🏫</div>
-                  <h3 className="text-lg font-bold text-white mb-2 font-poppins">{coach.name}</h3>
-                  <p className="text-primary font-semibold mb-2 font-poppins">{coach.role}</p>
-                  <p className="text-sm text-muted-foreground mb-3 font-poppins">{coach.exp}</p>
-                  <p className="text-sm text-accent font-poppins">✦ {coach.specialty}</p>
+                  <div className="relative h-64 w-full">
+                    <Image
+                      src={member.image}
+                      alt={member.name}
+                      fill
+                      className="object-cover transition-all duration-500"
+                    />
+                  </div>
+                  <div className="p-6 text-center">
+                    <h3 className="text-xl font-bold text-white mb-2 font-poppins">{member.name}</h3>
+                    <p className="text-primary font-semibold font-poppins">{member.role}</p>
+                  </div>
                 </motion.div>
               </AnimatedCard>
             ))}

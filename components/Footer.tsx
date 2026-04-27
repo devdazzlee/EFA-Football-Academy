@@ -62,7 +62,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-2">
                 <span className="text-accent">📞</span>
-                <a href="tel:+923001234567" className="hover:text-accent transition-colors">+92-300-123-4567</a>
+                <a href="tel:+923250498494" className="hover:text-accent transition-colors">+92 325 0498494</a>
               </li>
               <li className="flex items-center gap-2">
                 <span className="text-accent">📧</span>

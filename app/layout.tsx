@@ -11,7 +11,7 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: 'Elite Football Academy | Pakistan\'s Premier Football Training Center',
-  description: 'Elite Football Academy is Pakistan\'s premier football development center for teens and young adults aged 16–22. Train under expert coaches, compete at national level, and turn your football dream into reality.',
+  description: 'Elite Football Academy is Pakistan\'s premier football development center for passionate players of all ages. Train under expert coaches, compete at national level, and turn your football dream into reality.',
   icons: {
     icon: [
       {

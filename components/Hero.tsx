@@ -11,7 +11,7 @@ const slides = [
   },
   {
     headline: 'Train Like a Pro. Play Like a Champion.',
-    subheadline: 'Elite Football Academy delivers world-class football training built for serious players aged 16–22.',
+    subheadline: 'Elite Football Academy delivers world-class football training built for serious players of all ages.',
     cta1: 'Explore Programs',
     cta2: 'Meet Our Coaches',
   },
