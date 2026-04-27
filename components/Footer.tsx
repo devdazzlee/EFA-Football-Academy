@@ -93,9 +93,9 @@ export default function Footer() {
         <div className="text-center pt-8 border-t border-border text-sm text-muted-foreground animate-fade-in" style={{ animationDelay: '0.4s' }}>
           <p>© 2024 Elite Football Academy. All rights reserved.</p>
           <div className="flex justify-center gap-6 mt-4">
-            <a href="#" className="hover:text-accent transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-accent transition-colors">Terms of Service</a>
-            <a href="#" className="hover:text-accent transition-colors">Disclaimer</a>
+            <Link href="/privacy" className="hover:text-accent transition-colors">Privacy Policy</Link>
+            <Link href="/terms" className="hover:text-accent transition-colors">Terms of Service</Link>
+            <Link href="/disclaimer" className="hover:text-accent transition-colors">Disclaimer</Link>
           </div>
         </div>
       </div>

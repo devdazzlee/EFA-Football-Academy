@@ -12,84 +12,53 @@ export default function PrivacyPage() {
 
       <PageBanner
         title="Privacy Policy"
-        subtitle="Your Data Protection is Our Priority"
+        subtitle="Your privacy and data protection are important to us"
         emoji="🔒"
-        image="/facilities.jpg"
+        image="/privacy-bg.jpg"
       />
 
       <section className="py-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-4xl mx-auto prose prose-invert">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: '-100px' }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="space-y-8 font-poppins"
           >
-            <div className="p-8 rounded-xl bg-card border border-border">
-              <h2 className="text-3xl font-bold text-white mb-4 font-poppins">Introduction</h2>
-              <p className="text-muted-foreground leading-relaxed">
-                Elite Football Academy ("we," "us," "our," or "Company") operates the website and related services. This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Service and the choices you have associated with that data.
-              </p>
-            </div>
+            <h2 className="text-3xl font-bold text-white mb-6">1. Information We Collect</h2>
+            <p className="text-muted-foreground mb-8">
+              Elite Football Academy (EFA) collects personal information when you register for our programs, subscribe to our newsletter, or contact us through our website. This information may include your name, email address, phone number, and football experience.
+            </p>
 
-            <div className="p-8 rounded-xl bg-card border border-border">
-              <h2 className="text-3xl font-bold text-white mb-4 font-poppins">1. Information Collection and Use</h2>
-              <div className="space-y-4 text-muted-foreground">
-                <p>We collect several different types of information for various purposes to provide and improve our Service to you.</p>
-                <div>
-                  <h3 className="text-xl font-semibold text-white mb-2">Personal Data:</h3>
-                  <ul className="list-disc list-inside space-y-2">
-                    <li>Email address</li>
-                    <li>First name and last name</li>
-                    <li>Phone number</li>
-                    <li>Address, State, Province, ZIP/Postal code, City</li>
-                    <li>Cookies and Usage Data</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
+            <h2 className="text-3xl font-bold text-white mb-6">2. How We Use Your Information</h2>
+            <p className="text-muted-foreground mb-8">
+              We use the information we collect to:
+            </p>
+            <ul className="list-disc list-inside text-muted-foreground mb-8 space-y-2">
+              <li>Process your application and enrollment</li>
+              <li>Communicate with you regarding academy updates and training schedules</li>
+              <li>Improve our training programs and services</li>
+              <li>Send you newsletters and marketing communications (you can opt-out at any time)</li>
+            </ul>
 
-            <div className="p-8 rounded-xl bg-card border border-border">
-              <h2 className="text-3xl font-bold text-white mb-4 font-poppins">2. Use of Data</h2>
-              <div className="text-muted-foreground space-y-3">
-                <p>Elite Football Academy uses the collected data for various purposes:</p>
-                <ul className="list-disc list-inside space-y-2">
-                  <li>To provide and maintain our Service</li>
-                  <li>To notify you about changes to our Service</li>
-                  <li>To provide customer support</li>
-                  <li>To gather analysis or valuable information so that we can improve our Service</li>
-                  <li>To monitor the usage of our Service</li>
-                  <li>To detect, prevent and address technical issues</li>
-                </ul>
-              </div>
-            </div>
+            <h2 className="text-3xl font-bold text-white mb-6">3. Data Protection</h2>
+            <p className="text-muted-foreground mb-8">
+              We implement a variety of security measures to maintain the safety of your personal information. Your data is stored in secure networks and is only accessible by a limited number of persons who have special access rights to such systems.
+            </p>
 
-            <div className="p-8 rounded-xl bg-card border border-border">
-              <h2 className="text-3xl font-bold text-white mb-4 font-poppins">3. Security of Data</h2>
-              <p className="text-muted-foreground leading-relaxed">
-                The security of your data is important to us, but remember that no method of transmission over the Internet or method of electronic storage is 100% secure. While we strive to use commercially acceptable means to protect your Personal Data, we cannot guarantee its absolute security.
-              </p>
-            </div>
+            <h2 className="text-3xl font-bold text-white mb-6">4. Cookies</h2>
+            <p className="text-muted-foreground mb-8">
+              Our website uses cookies to enhance your browsing experience. Cookies are small files that a site or its service provider transfers to your computer's hard drive through your web browser that enables the site's systems to recognize your browser and capture and remember certain information.
+            </p>
 
-            <div className="p-8 rounded-xl bg-card border border-border">
-              <h2 className="text-3xl font-bold text-white mb-4 font-poppins">4. Changes to This Privacy Policy</h2>
-              <p className="text-muted-foreground leading-relaxed">
-                We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "effective date" at the top of this Privacy Policy. You are advised to review this Privacy Policy periodically for any changes.
-              </p>
-            </div>
+            <h2 className="text-3xl font-bold text-white mb-6">5. Third-Party Disclosure</h2>
+            <p className="text-muted-foreground mb-8">
+              We do not sell, trade, or otherwise transfer your personally identifiable information to outside parties unless we provide you with advance notice, except as required by law.
+            </p>
 
-            <div className="p-8 rounded-xl bg-card border border-border">
-              <h2 className="text-3xl font-bold text-white mb-4 font-poppins">5. Contact Us</h2>
-              <p className="text-muted-foreground leading-relaxed">
-                If you have any questions about this Privacy Policy, please contact us at:
-              </p>
-              <div className="mt-4 space-y-2 text-foreground">
-                <p>Email: privacy@eliteacademy.com</p>
-                <p>Phone: +92-XXX-XXXXXXX</p>
-                <p>Address: Islamabad, Pakistan</p>
-              </div>
-            </div>
+            <h2 className="text-3xl font-bold text-white mb-6">6. Contact Us</h2>
+            <p className="text-muted-foreground mb-8">
+              If there are any questions regarding this privacy policy, you may contact us using the information on our contact page.
+            </p>
           </motion.div>
         </div>
       </section>

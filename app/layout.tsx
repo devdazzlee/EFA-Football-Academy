@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Poppins } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
+import ScrollToTop from '@/components/ScrollToTop'
 import './globals.css'
 
 const poppins = Poppins({
@@ -34,6 +35,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${poppins.variable} bg-background`}>
       <body className="font-poppins antialiased bg-background text-foreground">
+        <ScrollToTop />
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
